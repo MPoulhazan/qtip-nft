@@ -22,14 +22,14 @@ const AppHeader = () => {
 
                     <div className="flex items-center justify-around w-full mt-4 sm:mt-0 sm:w-auto sm:ml-auto">
                         <a
-                            href="#components"
+                            href="https://opensea.io/collection/rick-astley-club"
                             className="w-12 mr-10"
                             title="See collection on OpenSea"
                         >
                             <img src="/images/open.png" />
                         </a>
                         <a
-                            href="https://opensea.io/collection/rick-astley-club"
+                            href="https://twitter.com/rick_astley_nft"
                             className="w-12"
                             title="See on Twitter"
                         >
