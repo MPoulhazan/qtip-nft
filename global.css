@@ -16,6 +16,9 @@
     background-color: #ffffff;
     margin: auto;
 }
+.link:hover {
+    color: #00ff0d !important;
+}
 .h-screen-home {
     background-color: #040018;
 }

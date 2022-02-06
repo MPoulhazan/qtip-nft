@@ -9,7 +9,7 @@ export const IndexPage: FC = () => {
         >
             <div className="pt-32 -mt-32 overflow-hidden text-white h-screen-home">
                 <div className="max-w-5xl px-4 pt-16 pb-16 mx-auto lg:pt-9 xl:pt-20">
-                    <p className="w-full text-3xl font-bold text-center mx-auto main-title sm:text-3xl md:text-8xl">
+                    <p className="w-full text-3xl font-bold text-center mx-auto main-title sm:text-5xl md:text-8xl">
                         Rick Astley NFT CLub
                     </p>
                     <p className="w-full text-3xl font-bold text-center mx-auto  sm:text-1xl md:text-2xl">

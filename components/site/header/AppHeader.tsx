@@ -2,19 +2,19 @@ import React from 'react';
 
 const AppHeader = () => {
     return (
-        <header className="relative z-50 flex-none w-full max-w-4xl pt-5 mx-auto text-sm font-medium leading-6 text-gray-700">
+        <header className="relative z-50 flex-none w-full max-w-4xl pt-5 mx-auto text-sm font-medium leading-6 text-white">
             <nav aria-label="Global" className="mx-auto">
                 <div className="flex flex-wrap w-full md:justify-between sm:justify-center">
                     <div className="w-full text-center xs:mx-auto md:mx-0">
                         <a
                             href="/components"
-                            className="mr-10 text-lg font-bold text-black hover:text-gray-800"
+                            className="mr-10 text-lg font-bold text-white link"
                         >
                             About
                         </a>
                         <a
                             href="#faq"
-                            className="flex-none text-lg font-bold text-black hover:text-gray-800"
+                            className="flex-none text-lg font-bold text-white link"
                         >
                             FAQ
                         </a>
