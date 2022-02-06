@@ -1,0 +1,132 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'bangers';
+    src: url('./public/fonts/Bangers-Regular.ttf') format('truetype');
+}
+
+.main-title {
+    color: #ffffff;
+}
+
+.title {
+    color: #040018;
+    background-color: #ffffff;
+    margin: auto;
+}
+.h-screen-home {
+    background-color: #040018;
+}
+.button-get {
+    color: #0a1800;
+    background-color: #00ff0d;
+    font-size: 3em;
+}
+* {
+    font-family: 'Bangers', cursive, sans-serif;
+    color: #ffffff;
+}
+
+:root {
+    --delay: 0.5s;
+    --timing: 1s;
+}
+.box-outer {
+    overflow: hidden;
+    margin: 5rem auto;
+    width: 20rem;
+    height: 10rem;
+}
+.main-box {
+    width: 20rem;
+    height: 10rem;
+    position: relative;
+    background: #00ff0d;
+    border: 0.5rem solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-box:hover {
+    opacity: 0.9;
+}
+.bar {
+    position: absolute;
+    width: 5rem;
+    height: 0.5rem;
+    background: #fff;
+    transition: all var(--timing) linear;
+    -webkit-animation-duration: var(--timing);
+    animation-duration: var(--timing);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.bar.delay {
+    animation-delay: var(--delay);
+    -webkit-animation-delay: var(--delay);
+}
+.top {
+    top: -0.5rem;
+    left: -0.5rem;
+}
+.right {
+    top: 1.8rem;
+    right: -2.8rem;
+    transform: rotate(90deg);
+}
+.bottom {
+    bottom: -0.5rem;
+    left: -0.5rem;
+}
+.left {
+    top: 1.8rem;
+    left: -2.8rem;
+    transform: rotate(90deg);
+}
+@-webkit-keyframes h-move {
+    0% {
+        left: -0.5rem;
+    }
+    100% {
+        left: 20rem;
+    }
+}
+@keyframes h-move {
+    0% {
+        left: -0.5rem;
+    }
+    100% {
+        left: 20rem;
+    }
+}
+.top,
+.bottom {
+    -webkit-animation-name: h-move;
+    animation-name: h-move;
+}
+@-webkit-keyframes v-move {
+    0% {
+        top: -0.5rem;
+    }
+    100% {
+        top: 12.8rem;
+    }
+}
+@keyframes v-move {
+    0% {
+        top: -0.5rem;
+    }
+    100% {
+        top: 12.8rem;
+    }
+}
+.right,
+.left {
+    -webkit-animation-name: v-move;
+    animation-name: v-move;
+}
