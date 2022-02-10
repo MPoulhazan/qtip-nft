@@ -30,7 +30,7 @@ const Meta = ({ pageTitle, description }: Props) => {
             <link rel="mask-icon" href="/icons/rocket.svg" />
             <meta property="og:type" content="website" />
             <meta name="twitter:card" content="summary" />
-            <meta name="twitter:site" content="@Rick_Astley_NFT" />
+            <meta name="twitter:site" content="@QNftip" />
             <meta property="og:title" content={`${pageTitle}`} />
             <meta property="og:url" content={`${url}${path}`} />
             <link rel="canonical" href={`${url}${path}`} />
@@ -42,18 +42,12 @@ const Meta = ({ pageTitle, description }: Props) => {
 
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@nytimes" />
-            <meta name="twitter:creator" content="@Rick_Astley_NFT" />
-            <meta
-                name="twitter:title"
-                content="Official Rick Astley NFT Club - Nerver Gonna Give You Up"
-            />
-            <meta
-                name="twitter:description"
-                content="Official Rick Astley NFT Club - Nerver Gonna Give You Up"
-            />
+            <meta name="twitter:creator" content="@QNftip" />
+            <meta name="twitter:title" content="Q-NFTip family" />
+            <meta name="twitter:description" content="Q-NFTip family" />
             <meta
                 name="twitter:image"
-                content="http://rick-astley-nft.com/images/home.jpg"
+                content="http://qnftip.com/images/home.jpg"
             />
         </Head>
     );

@@ -15,16 +15,16 @@ async function main() {
 
     // We get the contract to deploy
     // We get the contract to deploy
-    const RickAstleyNft = await hre.ethers.getContractFactory('RickAstleyNft');
-    const rick = await RickAstleyNft.deploy(
-        'RickAstleyNft 100',
-        'Rick',
+    const qnftip = await hre.ethers.getContractFactory('Qnftip');
+    const qtip = await qnftip.deploy(
+        'Qnftip 100',
+        'Qnftip',
         'ipfs://QmY4BY24YLmam9HCVZoPyN8tiE2ZkzgzL6LQzrUCyiYndN/'
     );
-    await rick.deployed();
+    await qtip.deployed();
 
     // This solves the bug in Mumbai network where the contract address is not the real one
-    const txHash = rick.deployTransaction.hash;
+    const txHash = qtip.deployTransaction.hash;
     console.log(`Tx hash: ${txHash}\nWaiting for transaction to be mined...`);
     const txReceipt = await ethers.provider.waitForTransaction(txHash);
 

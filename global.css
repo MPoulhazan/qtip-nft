@@ -91,6 +91,20 @@
     left: -2.8rem;
     transform: rotate(90deg);
 }
+@media screen and (min-width: 992px) {
+    .carousel {
+        display: none;
+    }
+}
+@media screen and (max-width: 991px) {
+    .grid-pict {
+        display: none !important;
+    }
+    .carousel-img {
+        width: 100%;
+        padding: 20px;
+    }
+}
 @-webkit-keyframes h-move {
     0% {
         left: -0.5rem;
