@@ -2,9 +2,20 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+:root {
+    --delay: 0.5s;
+    --timing: 1s;
+    --primary: #72ff00;
+}
+
 @font-face {
-    font-family: 'bangers';
-    src: url('./public/fonts/Bangers-Regular.ttf') format('truetype');
+    font-family: 'gruppo';
+    src: url('./public/fonts/Gruppo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'zen';
+    src: url('./public/fonts/ZenTokyoZoo-Regular.ttf') format('truetype');
 }
 
 .main-title {
@@ -13,14 +24,13 @@
 
 .title {
     color: #040018;
-    background-color: #ffffff;
     margin: auto;
 }
 .link:hover {
     color: #00ff0d !important;
 }
 .h-screen-home {
-    background-color: #040018;
+    background-color: #0d0e3b;
 }
 .button-get {
     color: #0a1800;
@@ -32,10 +42,6 @@
     color: #ffffff;
 }
 
-:root {
-    --delay: 0.5s;
-    --timing: 1s;
-}
 .box-outer {
     overflow: hidden;
     margin: 5rem auto;
@@ -146,4 +152,57 @@
 .left {
     -webkit-animation-name: v-move;
     animation-name: v-move;
+}
+
+.app {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30 68 70 / 50%);
+}
+
+.title {
+    font-family: 'zen', cursive, sans-serif;
+}
+
+svg text {
+     text-shadow: 0px 0px 10px var(--primary);
+     font-size: 10vw;
+    stroke-width: 1px;
+    fill: transparent;
+    stroke: var(--primary);
+    letter-spacing: 4px;
+    animation: effect 6s alternate;
+}
+@keyframes effect {
+    0% {
+        stroke-dasharray: 0 70%;
+    }
+    100% {
+        stroke-dasharray: 10% 0%;
+        stroke-dashoffset: 20%;
+        text-shadow: 0px 0px 20px var(--primary), 0px 0px 40px var(--primary), 0px 0px 60px var(--primary),
+            0px 0px 80px var(--primary), 0px 0px 100px var(--primary);
+    }
 }

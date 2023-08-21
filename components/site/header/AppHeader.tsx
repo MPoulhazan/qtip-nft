@@ -22,7 +22,7 @@ const AppHeader = () => {
 
                     <div className="flex items-center justify-around w-full mt-4 sm:mt-0 sm:w-auto sm:ml-auto">
                         <a
-                            href="https://opensea.io/collection/q-nftip"
+                            href="https://opensea.io/collection/qnftip-family"
                             className="w-12 mr-10"
                             title="See collection on OpenSea"
                         >
