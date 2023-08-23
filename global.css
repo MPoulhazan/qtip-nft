@@ -6,6 +6,7 @@
     --delay: 0.5s;
     --timing: 1s;
     --primary: #72ff00;
+    --secondary: #ffbe91;
 }
 
 @font-face {
@@ -16,142 +17,6 @@
 @font-face {
     font-family: 'zen';
     src: url('./public/fonts/ZenTokyoZoo-Regular.ttf') format('truetype');
-}
-
-.main-title {
-    color: #ffffff;
-}
-
-.title {
-    color: #040018;
-    margin: auto;
-}
-.link:hover {
-    color: #00ff0d !important;
-}
-.h-screen-home {
-    background-color: #0d0e3b;
-}
-.button-get {
-    color: #0a1800;
-    background-color: #00ff0d;
-    font-size: 3em;
-}
-* {
-    font-family: 'Bangers', cursive, sans-serif;
-    color: #ffffff;
-}
-
-.box-outer {
-    overflow: hidden;
-    margin: 5rem auto;
-    width: 20rem;
-    height: 10rem;
-}
-.main-box {
-    width: 20rem;
-    height: 10rem;
-    position: relative;
-    background: #00ff0d;
-    border: 0.5rem solid #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.main-box:hover {
-    opacity: 0.9;
-}
-.bar {
-    position: absolute;
-    width: 5rem;
-    height: 0.5rem;
-    background: #fff;
-    transition: all var(--timing) linear;
-    -webkit-animation-duration: var(--timing);
-    animation-duration: var(--timing);
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-}
-.bar.delay {
-    animation-delay: var(--delay);
-    -webkit-animation-delay: var(--delay);
-}
-.top {
-    top: -0.5rem;
-    left: -0.5rem;
-}
-.right {
-    top: 1.8rem;
-    right: -2.8rem;
-    transform: rotate(90deg);
-}
-.bottom {
-    bottom: -0.5rem;
-    left: -0.5rem;
-}
-.left {
-    top: 1.8rem;
-    left: -2.8rem;
-    transform: rotate(90deg);
-}
-@media screen and (min-width: 992px) {
-    .carousel {
-        display: none;
-    }
-}
-@media screen and (max-width: 991px) {
-    .grid-pict {
-        display: none !important;
-    }
-    .carousel-img {
-        width: 100%;
-        padding: 20px;
-    }
-}
-@-webkit-keyframes h-move {
-    0% {
-        left: -0.5rem;
-    }
-    100% {
-        left: 20rem;
-    }
-}
-@keyframes h-move {
-    0% {
-        left: -0.5rem;
-    }
-    100% {
-        left: 20rem;
-    }
-}
-.top,
-.bottom {
-    -webkit-animation-name: h-move;
-    animation-name: h-move;
-}
-@-webkit-keyframes v-move {
-    0% {
-        top: -0.5rem;
-    }
-    100% {
-        top: 12.8rem;
-    }
-}
-@keyframes v-move {
-    0% {
-        top: -0.5rem;
-    }
-    100% {
-        top: 12.8rem;
-    }
-}
-.right,
-.left {
-    -webkit-animation-name: v-move;
-    animation-name: v-move;
 }
 
 .app {
@@ -177,9 +42,11 @@
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(30 68 70 / 50%);
+    padding: 20px;
 }
 
 .title {
@@ -187,8 +54,8 @@
 }
 
 svg text {
-     text-shadow: 0px 0px 10px var(--primary);
-     font-size: 10vw;
+    text-shadow: 0px 0px 10px var(--primary);
+    font-size: 10vw;
     stroke-width: 1px;
     fill: transparent;
     stroke: var(--primary);
@@ -202,7 +69,32 @@ svg text {
     100% {
         stroke-dasharray: 10% 0%;
         stroke-dashoffset: 20%;
-        text-shadow: 0px 0px 20px var(--primary), 0px 0px 40px var(--primary), 0px 0px 60px var(--primary),
-            0px 0px 80px var(--primary), 0px 0px 100px var(--primary);
+        text-shadow: 0px 0px 20px var(--primary), 0px 0px 40px var(--primary),
+            0px 0px 60px var(--primary), 0px 0px 80px var(--primary),
+            0px 0px 100px var(--primary);
     }
+}
+
+.vertical-menu {
+    font-family: 'gruppo', cursive, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 25%;
+}
+
+.menu-item {
+    font-family: 'gruppo', cursive, sans-serif;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.menu-item:hover {
+    font-size: 130%;
+    color: var(--secondary);
+    border-bottom-color: var(--secondary);
+    transform: scale(1.1);
 }

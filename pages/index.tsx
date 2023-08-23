@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import React from 'react';
 import AppLayout from '../components/layout/AppLayout';
+import VerticalMenu from '../components/menu/menu';
 // import './index.css';
 
 const style3d = {
@@ -28,6 +29,7 @@ export const IndexPage: FC = () => {
                             CHRYSALIDE
                         </text>
                     </svg>
+                    <VerticalMenu />
                 </div>
             </div>
         </AppLayout>

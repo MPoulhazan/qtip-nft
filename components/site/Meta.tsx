@@ -10,7 +10,7 @@ interface Props {
 const Meta = ({ pageTitle, description }: Props) => {
     const router = useRouter();
 
-    const url = 'https://www.tailwind-kit.com';
+    const url = 'https://www.chrysalide-crew.com';
     const path = router.asPath;
 
     return (
@@ -43,8 +43,8 @@ const Meta = ({ pageTitle, description }: Props) => {
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@nytimes" />
             <meta name="twitter:creator" content="@QNftip" />
-            <meta name="twitter:title" content="Q-NFTip family" />
-            <meta name="twitter:description" content="Q-NFTip family" />
+            <meta name="twitter:title" content="Chrysalid crew" />
+            <meta name="twitter:description" content="Chrysalid crew" />
             <meta
                 name="twitter:image"
                 content="http://qnftip.com/images/home.jpg"

@@ -75,7 +75,7 @@ interface Props {
 
 const AppLayout = ({ title, desc, children }: Props) => {
     return (
-        <div className="flex flex-col min-h-full px-4 font-sans antialiased text-gray-600 h-screen-home">
+        <div className="flex flex-col min-h-full font-sans antialiased text-gray-600 h-screen-home">
             <Meta pageTitle={title} description={desc} />
             {/*       <AppHeader />
              */}{' '}
